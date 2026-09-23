@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#0B0F19"
+    tools:context=".Pregunta4Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Plan de Datos Móviles"
+        android:textColor="#F8FAFC"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese GB consumidos"
+        app:boxStrokeColor="#38BDF8"
+        app:hintTextColor="#38BDF8"
+        android:textColorHint="#94A3B8"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_consumo_gb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="#F8FAFC"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Calcular Cobro"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#38BDF8"
+        android:textColor="#0B0F19"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#1E293B"
+        android:elevation="4dp"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El desglose del consumo aparecerá aquí..."
+            android:textSize="15sp"
+            android:textColor="#E2E8F0"
+            android:padding="20dp"
+            android:minHeight="120dp"
+            android:gravity="center_vertical" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
