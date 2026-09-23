@@ -5,8 +5,10 @@ plugins {
 
 android {
     namespace = "pe.edu.cibertec.appgrupo1"
-    compileSdk {
-        version = release(36)
+    compileSdk = 36
+
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
