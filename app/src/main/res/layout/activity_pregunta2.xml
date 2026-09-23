@@ -9,7 +9,7 @@
     android:padding="24dp"
     android:gravity="center_horizontal"
     android:background="#0B0F19"
-    tools:context=".Pregunta2">
+    tools:context=".Pregunta2Activity">
 
     <TextView
         android:layout_width="match_parent"

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Pregunta2 : AppCompatActivity() {
+class Pregunta2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,10 +21,8 @@ class Pregunta2 : AppCompatActivity() {
             insets
         }
 
-        // --- PEGA TU LÓGICA DE CÁLCULO AQUÍ ---
 
-        // 1. Asegúrate de reemplazar los IDs (et_consumo, btn_calcular, tv_resultado)
-        // con los nombres reales que le hayas puesto a tus componentes en tu archivo activity_pregunta2.xml
+
         val etConsumo = findViewById<EditText>(R.id.et_consumo)
         val btnCalcalcular = findViewById<Button>(R.id.btn_calcular)
         val tvResultado = findViewById<TextView>(R.id.tv_resultado)
